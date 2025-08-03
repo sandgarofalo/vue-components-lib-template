@@ -15,7 +15,7 @@
     "./styles.css": "./dist/vue-components-lib-template.css"
   },
   "scripts": {
-    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly --outDir dist",
+    "build": "prettier . --write && vite build && vue-tsc --declaration --emitDeclarationOnly --outDir dist",
     "dev": "vite --mode development --open",
     "publish": "npm run build"
   },
@@ -25,6 +25,7 @@
   "devDependencies": {
     "@types/node": "^22.15.0",
     "@vitejs/plugin-vue": "^6.0.0",
+    "prettier": "^3.6.2",
     "typescript": "^5.8.3",
     "vite": "^7.0.6",
     "vue-tsc": "^3.0.3"

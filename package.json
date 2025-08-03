@@ -1,0 +1,42 @@
+{
+  "name": "vue-components-lib-template",
+  "version": "1.0.0",
+  "main": "dist/vue-components-lib-template.umd.js",
+  "module": "dist/vue-components-lib-template.es.js",
+  "types": "dist/entry.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/entry.d.ts",
+      "import": "./dist/vue-components-lib-template.es.js",
+      "require": "./dist/vue-components-lib-template.umd.js"
+    },
+    "./styles.css": "./dist/vue-components-lib-template.css"
+  },
+  "scripts": {
+    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly --outDir dist",
+    "dev": "vite --mode development --open",
+    "publish": "npm run build"
+  },
+  "peerDependencies": {
+    "quasar": "^2.18.2",
+    "vue": "^3.5.18"
+  },
+  "devDependencies": {
+    "@quasar/vite-plugin": "^1.10.0",
+    "@types/node": "^22.15.0",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "sass-embedded": "^1.89.2",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.6",
+    "vue-tsc": "^3.0.3"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.17.0"
+  },
+  "engines": {
+    "node": "^22.0.0"
+  }
+}

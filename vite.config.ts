@@ -1,17 +1,12 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import { transformAssetUrls } from "@quasar/vite-plugin";
 import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) =>
   mode === "development"
     ? {
-        plugins: [
-          vue({
-            template: { transformAssetUrls },
-          }),
-        ],
+        plugins: [vue()],
         root: path.resolve(__dirname, "playground"),
         server: {
           open: true,
@@ -34,5 +29,5 @@ export default defineConfig(({ mode }) =>
             },
           },
         },
-      }
+      },
 );

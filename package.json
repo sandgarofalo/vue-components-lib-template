@@ -1,6 +1,5 @@
 {
   "name": "vue-components-lib-template",
-  "version": "1.0.0",
   "main": "dist/vue-components-lib-template.umd.js",
   "module": "dist/vue-components-lib-template.es.js",
   "types": "dist/entry.d.ts",
